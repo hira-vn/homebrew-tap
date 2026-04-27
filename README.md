@@ -5,7 +5,7 @@ Homebrew formulae for [Hira](https://github.com/hira-vn/hira) — local agent ru
 ## Install
 
 ```bash
-brew install hira-vn/tap/hira
+brew install hira-vn/tap/cli
 ```
 
 ## Update
