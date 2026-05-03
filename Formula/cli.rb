@@ -5,21 +5,21 @@
 class Cli < Formula
   desc "Hira CLI — local agent runtime and management tool"
   homepage "https://github.com/hira-vn/cli"
-  version "0.0.3"
+  version "0.1.2-dev.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hira-vn/cli/releases/download/v0.0.3/hira_darwin_amd64.tar.gz"
-      sha256 "1d1da1c8fd5a9ce1809fa3144e3442ede1e9be18f59ad296e73a6a3836d27248"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_darwin_amd64.tar.gz"
+      sha256 "9dd2bade3bcd1af6e5cf48a8288a241941f833eabd7628d29a8e65b813b94d37"
 
       define_method(:install) do
         bin.install "hira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hira-vn/cli/releases/download/v0.0.3/hira_darwin_arm64.tar.gz"
-      sha256 "5f3def8344a87366092382c6c5265532d084e5e5b8481410dcc640b73d4abdd3"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_darwin_arm64.tar.gz"
+      sha256 "ab6b504eec79ec610e58453a08f89c1a9904d6b1a9b38ed1d923e225ecbfb674"
 
       define_method(:install) do
         bin.install "hira"
@@ -29,15 +29,15 @@ class Cli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hira-vn/cli/releases/download/v0.0.3/hira_linux_amd64.tar.gz"
-      sha256 "e8379cf18419118860cfe81d7750b1067509229947042df8b5cb7f6afd31787b"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_linux_amd64.tar.gz"
+      sha256 "575dbd3dea8207a524dff2e31fd7084f938836bd15d174da214fb984d0c6a318"
       define_method(:install) do
         bin.install "hira"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hira-vn/cli/releases/download/v0.0.3/hira_linux_arm64.tar.gz"
-      sha256 "f2a0fe13244cde957f44b826a17eb2dab74dc3f405338cf49bc9b239d41040d2"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_linux_arm64.tar.gz"
+      sha256 "834cd127f5bbb58ad215ca7a62774980a64b77428c599b36ff945da13ae2414c"
       define_method(:install) do
         bin.install "hira"
       end
