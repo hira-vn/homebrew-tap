@@ -5,21 +5,21 @@
 class Cli < Formula
   desc "Hira CLI — local agent runtime and management tool"
   homepage "https://github.com/hira-vn/cli"
-  version "0.1.2-dev.1"
+  version "0.1.2-dev.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_darwin_amd64.tar.gz"
-      sha256 "9dd2bade3bcd1af6e5cf48a8288a241941f833eabd7628d29a8e65b813b94d37"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.2/hira_darwin_amd64.tar.gz"
+      sha256 "792adbe3d39611bc6cfa5e165248971aff4253219378dd3a9ee1f1241cb8c737"
 
       define_method(:install) do
         bin.install "hira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_darwin_arm64.tar.gz"
-      sha256 "ab6b504eec79ec610e58453a08f89c1a9904d6b1a9b38ed1d923e225ecbfb674"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.2/hira_darwin_arm64.tar.gz"
+      sha256 "b9a88987da0baa810ac6d51e4d2b3e7895441348acd5b2469b1ac90012678201"
 
       define_method(:install) do
         bin.install "hira"
@@ -29,15 +29,15 @@ class Cli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_linux_amd64.tar.gz"
-      sha256 "575dbd3dea8207a524dff2e31fd7084f938836bd15d174da214fb984d0c6a318"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.2/hira_linux_amd64.tar.gz"
+      sha256 "c1203a728bb1af25ebd4eb3f6f1e759b7b33499bed21337b40d6489531a9311f"
       define_method(:install) do
         bin.install "hira"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.1/hira_linux_arm64.tar.gz"
-      sha256 "834cd127f5bbb58ad215ca7a62774980a64b77428c599b36ff945da13ae2414c"
+      url "https://github.com/hira-vn/cli/releases/download/v0.1.2-dev.2/hira_linux_arm64.tar.gz"
+      sha256 "8d5117b9be17ca3b31652079a05244697af7acb24755b0f9f9ea547375c9e60d"
       define_method(:install) do
         bin.install "hira"
       end
